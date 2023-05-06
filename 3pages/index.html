@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="main.js"></script>
+  
+
+
+    <title>Notes</title>
+</head>
+<body>
+    
+<div data-role="page" id="home">
+
+    <!-- header --> 
+    <div data-role="header" data-theme='a'>
+  
+    <div data-role="navbar" data-theme='a'>
+        <ul>
+        <li><a href="#home">Home Page</a></li>
+        <li><a href="#show">Your Notes</a></li>
+        <li><a href="#add">Add New Note</a></li>
+        </ul>
+    </div>
+    <h2>Welcome to Notes</h2>
+    </div>
+
+    <!-- content -->
+    <div data-role="content" data-theme='a'>
+        Real application function code
+    </div>
+    
+
+
+    <!-- notes footer --> 
+    <div data-role="footer" data-theme='b'>
+    <h3>Copyrigtht 2022 by Kurt Friedrich</h3>
+    </div>
+
+</div>   <!-- end of page --------------------------------------------> 
+
+  
+
+<div data-role="page" id="show">
+    
+    <!-- header --> 
+    <div data-role="header" data-theme='c'>
+        <!-- /navbar -->
+        <div data-role="navbar" data-theme='c'>
+            <ul>
+            <li><a href="#home">Home Page</a></li>
+            <li><a href="#show">Your Notes</a></li>
+            <li><a href="#add">Add New Notes</a></li>
+            </ul>
+        </div>
+    <h2>Here are Your Notes</h2>
+    </div>
+
+    <!-- content -->
+    <div data-role="content" data-theme='c'>
+        Real application function code
+    </div>
+
+    <!-- notes footer --> 
+    <div data-role="footer" data-theme='b'>
+    <h3>Copyrigtht 2022 by Kurt Friedrich</h3>
+    </div>
+
+</div>   <!-- end of page -----------------------------------> 
+
+
+<div data-role="page" id="add">
+
+    <!-- header --> 
+    <div data-role="header" data-theme='d'>
+         <div data-role="navbar" data-theme='d'>
+            <ul>
+            <li><a href="#home">Home Page</a></li>
+            <li><a href="#show">Your Notes</a></li>
+            <li><a href="#add">Add New Notes</a></li>
+            </ul>
+        </div>
+    <h2>Add a New Note</h2>
+    </div>
+
+    <!-- content -->
+    <div data-role="content" data-theme='d'>
+        Real application function code
+    <br>
+    
+        <a href="#popupMenu" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a">What next?</a>
+        <div data-role="popup" id="popupMenu" data-theme="b">
+        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+        <li data-role="list-divider">Choose an action</li>
+        <li><a href="#home" data-transition="flow" >Back to Home</a></li>
+        <li><a href="#show" data-transition="fade" >Show Notes</a></li>
+        </ul>
+        </div>
+        
+
+
+
+
+    </div>
+
+    <!-- notes footer --> 
+    <div data-role="footer" data-theme='b'>
+    <h3>Copyrigtht 2022 by Kurt Friedrich</h3>
+    </div>
+
+</div>  <!-- end of page ---------------------------------------> 
+    
+
+
+</body>
+</html>
+
+<script>
+  
+  let NoteArray = [];
+
+let NoteObject = function (pData, pType, pPriority) {
+    this.data = pData;
+    this.type = pType;
+    this.priority = pPriority;
+}
+
+NoteArray.push ( new NoteObject("Eat Lunch", "Home", 1)  );
+NoteArray.push ( new NoteObject("Do 209 HW", "School", 2)  );
+NoteArray.push ( new NoteObject("Watch Dune", "Home", 3)  );
+
+let selectedType = "";
+
+// code runs immediately
+//================================================================
+
+// runs  when dom is loaded
+document.addEventListener("DOMContentLoaded", function (event) {
+
+    createList();
+
+    document.getElementById("buttonAdd").addEventListener("click", function () {
+        NoteArray.push ( new NoteObject(document.getElementById("dataInput").value, selectedType,
+        document.getElementById("priorityInput").value ) );
+        
+        document.getElementById("dataInput").value = "";
+        document.getElementById("priorityInput").value = "";
+
+        createList();
+    });
+
+    $(document).bind("change", "#select-type", function (event, ui) {
+        selectedType = document.getElementById("select-type").value;
+    });
+
+});
+
+
+//======================================
+// function defintions
+function createList() {
+    // clear prior data
+    var myul = document.getElementById("myul");
+    myul.innerHTML = "";
+
+    NoteArray.forEach(function (element,) {   // use handy array forEach method
+        var li = document.createElement('li');
+          // added data-role="listview" to the ul in the html
+        li.innerHTML = element.priority + ":  " + element.type + "   " + element.data;
+        myul.appendChild(li);
+    });
+};
+
+</script>
+  
+  
+  
+  
