@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,15 +126,14 @@
 
 </div>  <!-- end of page ---------------------------------------> 
     
-
-
 </body>
+
 </html>
 
 
 <script>
   
-  
+
 let NoteArray = [];
 
 let NoteObject = function (pData, pType, pPriority) {
@@ -172,8 +170,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         selectedType = document.getElementById("select-type").value;
     });
 
-});
-
 
 //======================================
 // function defintions
@@ -182,6 +178,7 @@ function createList() {
     var myul = document.getElementById("myul");
     myul.innerHTML = "";
 
+-
     NoteArray.forEach(function (element,) {   // use handy array forEach method
         var li = document.createElement('li');
           // added data-role="listview" to the ul in the html
@@ -189,5 +186,8 @@ function createList() {
         myul.appendChild(li);
     });
 };
+
+
+
 </script>
   
