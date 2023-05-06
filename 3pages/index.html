@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
     <script src="main.js"></script>
   
 
@@ -19,13 +21,12 @@
 <div data-role="page" id="home">
 
     <!-- header --> 
-    <div data-role="header" data-theme='a'>
+    <div data-role="header" data-theme='e'>
   
-    <div data-role="navbar" data-theme='a'>
+    <div data-role="navbar" data-theme='e'>
         <ul>
-        <li><a href="#home">Home Page</a></li>
-        <li><a href="#show">Your Notes</a></li>
-        <li><a href="#add">Add New Note</a></li>
+        <li><a href="#show" data-transition="slideup">Your Notes</a></li>
+        <li><a href="#add" data-transition="slideup">Add New Note</a></li>
         </ul>
     </div>
     <h2>Welcome to Notes</h2>
@@ -33,7 +34,8 @@
 
     <!-- content -->
     <div data-role="content" data-theme='a'>
-        Real application function code
+        You can keep notes in this website.<br><br>
+        <img src="images/note.jpg" alt="picture of notes">
     </div>
     
 
@@ -50,21 +52,22 @@
 <div data-role="page" id="show">
     
     <!-- header --> 
-    <div data-role="header" data-theme='c'>
+    <div data-role="header" data-theme='e'>
         <!-- /navbar -->
-        <div data-role="navbar" data-theme='c'>
+        <div data-role="navbar" data-theme='e'>
             <ul>
-            <li><a href="#home">Home Page</a></li>
-            <li><a href="#show">Your Notes</a></li>
-            <li><a href="#add">Add New Notes</a></li>
+            <li><a href="#home" data-transition="pop" >Home Page</a></li>
+            <li><a href="#add" data-transition="pop" >Add New Notes</a></li>
             </ul>
         </div>
     <h2>Here are Your Notes</h2>
+    <br><br>
+ 
     </div>
 
     <!-- content -->
     <div data-role="content" data-theme='c'>
-        Real application function code
+        <ul id="myul" data-role="listview"></ul>  
     </div>
 
     <!-- notes footer --> 
@@ -78,12 +81,11 @@
 <div data-role="page" id="add">
 
     <!-- header --> 
-    <div data-role="header" data-theme='d'>
-         <div data-role="navbar" data-theme='d'>
+    <div data-role="header" data-theme='e'>
+         <div data-role="navbar" data-theme='e'>
             <ul>
-            <li><a href="#home">Home Page</a></li>
-            <li><a href="#show">Your Notes</a></li>
-            <li><a href="#add">Add New Notes</a></li>
+            <li><a href="#home" data-transition="flip" >Home Page</a></li>
+            <li><a href="#show" data-transition="flip">Your Notes</a></li>
             </ul>
         </div>
     <h2>Add a New Note</h2>
@@ -91,9 +93,22 @@
 
     <!-- content -->
     <div data-role="content" data-theme='d'>
-        Real application function code
+ 
+    Enter note priority <br />
+    <input type="text" value="" id="priorityInput" /><br />
+    Enter the note<br>
+    <input type="text" value="" id="dataInput" />
+
+    <label for="select-type">Select a Type</label>
+    <select name="select-type" id="select-type">
+        <option value="College">College</option>
+        <option value="Work">Work</option>
+        <option value="Home">Home</option>
+    </select>
+
+    <button id="buttonAdd">Add Note</button>
     <br>
-    
+
         <a href="#popupMenu" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a">What next?</a>
         <div data-role="popup" id="popupMenu" data-theme="b">
         <ul data-role="listview" data-inset="true" style="min-width:210px;">
@@ -103,10 +118,6 @@
         </ul>
         </div>
         
-
-
-
-
     </div>
 
     <!-- notes footer --> 
@@ -121,9 +132,11 @@
 </body>
 </html>
 
+
 <script>
   
-  let NoteArray = [];
+  
+let NoteArray = [];
 
 let NoteObject = function (pData, pType, pPriority) {
     this.data = pData;
@@ -176,9 +189,5 @@ function createList() {
         myul.appendChild(li);
     });
 };
-
 </script>
-  
-  
-  
   
