@@ -1,8 +1,8 @@
 function validateForm(){
   var FirstName = document.getElementById("FirstName").value;
   var LastName = document.getElementById("LastName").value;
-  var Email = document.getElementById("Email").value;
-  var PhoneNumber = document.getElementById("PhoneNumber").value;  
+  var EMail = document.getElementById("Email").value;
+  var Phone = document.getElementById("PhoneNumber").value;  
   var Username = document.getElementById("Username").value;
   var Password = document.getElementById("Password").value;
   var Address = document.getElementById("Address").value;
