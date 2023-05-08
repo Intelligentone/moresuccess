@@ -1,8 +1,8 @@
 function validateForm(){
   var FirstName = document.getElementById("FirstName").value;
   var LastName = document.getElementById("LastName").value;
-  var EMail = document.getElementById("Email").value;
-  var Phone = document.getElementById("PhoneNumber").value;  
+  var Email = document.getElementById("Email").value;
+  var PhoneNumber = document.getElementById("PhoneNumber").value;  
   var Username = document.getElementById("Username").value;
   var Password = document.getElementById("Password").value;
   var Address = document.getElementById("Address").value;
@@ -56,7 +56,7 @@ function validateForm(){
   else {
     var atpos = Email.indexOf("@");
     var dotpos = Email.lastIndexOf(".");             
-    if(atpos< 1 || dotpos<atpos+2 || dotpos+2>=EMail.length) {
+    if(atpos< 1 || dotpos<atpos+2 || dotpos+2>=Email.length) {
       document.getElementById("errorMessages3").innerHTML = "Please enter a valid Email.";
     } 
     else {
