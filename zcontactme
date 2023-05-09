@@ -1,0 +1,18 @@
+
+<div style="text-align: center;">
+
+<h1>Contact Me</h1>
+
+<div class="mycontact"> <b>
+</b> 
+<form action="https://intelligentone.github.io/moresuccess/thankyou04/index.html" method="get" name="mycontact"> <b> 
+<label for="fname">NAME:</label> <input type="text" id="fname" name="fname"><br><br>
+<label for="lname">EMAIL:</label> <input type="text" id="lname" name="lname"><br><br>
+<label for="fname">COMMENT:</label> <input type="text" id="fname" name="fname"><br><br> 
+    
+<input type="submit" value="Submit"> </form> </div>
+
+</form>
+
+ 
+
