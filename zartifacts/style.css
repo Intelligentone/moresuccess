@@ -1,8 +1,12 @@
 <style>
 
 
-body{background-color:#C0C0C0;}
-
+body {     
+    width:95%;     
+    background-color:Silver;     
+    font-weight:bold;     
+    color:Maroon;     
+}
 h1{color: blue;}
 
 li{color: red;}
