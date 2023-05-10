@@ -2,14 +2,6 @@
 
 
 
-h1{color: blue;}
-
-li{color: red;}
-
-
-body {
-  background-image: url("<style>
-
 
 
 h1{color: blue;}
@@ -22,8 +14,6 @@ body {
 }
 
 
-</style>);
-}
 
 
 </style>
