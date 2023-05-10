@@ -1,0 +1,54 @@
+
+<style>			
+  
+		
+			body {
+				width: 90%;
+				margin: 0 auto;}
+			#content {
+				overflow: auto;}
+			#nav, #feature, #footer {
+				margin: 1%;}
+			.column1, .column2, .column3 {
+				width: 31.3%;
+				float: left;
+				margin: 1%;
+  
+}		.column3 {
+				margin-right: 0%;}
+			li {
+				display: inline;
+				padding: 0.5em;}
+			#nav, #footer {
+				background-color: #efefef;
+				padding: 0.5em 0;}
+			#feature, .article {
+				height: 10em;
+				margin-bottom: 1em;
+				background-color: ;}
+body {
+  color: white;text-align: center;
+}
+
+h1 {
+  color: gold;text-align: center;
+}
+
+body { 
+   font-family: 'CursiveSerifBold'; 
+   font-weight: bold; 
+   font-style: italic; 
+}
+
+         body {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.-O9bXDHPI1HvXdNHTOoeCwHaEK%26pid%3DApi&f=1&ipt=04a6adfd81d269f07233e79db6ef2a023b4f0d0af4a91659a71f7374d958004a&ipo=images");
+}
+
+#nav{background-color: orange;}
+#footer{background-color: red;}
+#feature{background-color: lightgreen;}
+
+#article, .column1{background-color: blue;}
+#article, .column2{background-color: lightblue;}
+#article, .column3{background-color: darkblue;}
+		</style>
