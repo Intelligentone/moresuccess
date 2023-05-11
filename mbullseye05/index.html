@@ -19,12 +19,12 @@
 </html>
 
 <script>
-var multiplier = prompt("Please select a value between 1-10"); 
+var multiplier = prompt("Please select a value between 1-10");//Type of input & user question
 
-
+//counter to 0
 var i = 0;
 
-
+//Multiplication Table
 var msg = '<h2> Multiplication Table </h2>';
 
 while (i <= 11) {
@@ -32,13 +32,13 @@ while (i <= 11) {
     i++;
 }
 
-
+//Message for page
 var el = document.getElementById('blackboard');
 el.innerHTML = msg;
 
 
 
-
+//expand
 var table;
 do {
 	table = prompt('Please select a number to be multiplied between 0 and 10');
@@ -50,7 +50,7 @@ for(var i = 1; i < 11; i++) {
     msg += i + ' x ' + table + ' = ' + (i * table) + '<br />';
  }
 
-
+//Table
 var el = document.getElementById('blackboard');
 el.innerHTML = msg;
 
