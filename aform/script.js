@@ -1,4 +1,4 @@
-<script>
+
 function validateForm(){
   var FirstName = document.getElementById("FirstName").value;
   var LastName = document.getElementById("LastName").value;
@@ -190,4 +190,4 @@ function validateForm(){
     return false;
   } 
 }
-</script>
+
