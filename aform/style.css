@@ -13,7 +13,7 @@ body {
   margin: auto;
   padding: 50px;
   background: #ffffff;
-  border: 10px solid #f2f2f2;
+  border: 10px solid red;
 }
 
 h2, p {
