@@ -10,8 +10,10 @@ li{color: white;}
 
 body {background-color: lightblue;}
 
-body{border-radius: 10px;
- margin:15px auto;
- align-content:center;}
-
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid white;
+  padding: 10px;
+}
 </style>
