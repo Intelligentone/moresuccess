@@ -1,0 +1,102 @@
+body {
+	
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XKZR9bLekzuzX-QYReJpWAHaHa%26pid%3DApi&f=1&ipt=b20f773e4ff21a8d2440318f91561598cf77145435c40b583ce90d417f51f46f&ipo=images);
+	background-repeat: repeat;
+}
+a, a:visited {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: none;
+	color: purple;
+}
+a:active {
+	text-decoration: none;
+	color: gold;
+}
+button {
+	border-radius: 10px;
+	font-size: large;
+}
+button:hover {
+	background-color: gold;
+	border-radius: 15px;
+	font-size: x-large;
+	font-style: bold;
+}
+p, h1 {
+	width:35em; color:purple
+	}
+#drawingArea {
+	margin-top: 10px;
+	border: 4px solid gold;
+	border-radius: 20px;
+	width: 40em;
+	height: 50em;
+	background:black;
+}
+
+
+.dot {
+	height:20px;
+	width: 20px;
+	border-radius: 50px;
+	background: gold;
+	position: absolute;
+}
+.palette {
+	height: 20px;
+	width: 20px;
+	border-radius: 4px;
+	float: left;
+	margin:10px;
+}
+.palette:hover {
+	height: 23px;
+	width: 23px;
+	border-radius: 4px;
+	float: left;
+	margin:7px;
+}
+.break {
+	clear:both;
+}
+#gold{
+	background-color:gold;
+}
+#gold:hover{
+	background-color:gold;
+}
+#purple{
+	background-color: purple;
+}
+#purple:hover{
+	background-color:purple;
+}
+#silver{
+	background-color:silver;
+}
+#silver:hover{
+	background-color:silver;
+}
+
+#white{
+	background-color:white;
+}
+#white:hover{
+	background-color:white;
+}
+
+
+
+#frame{
+	border-radius: 15px;
+	margin: 20px 35%;
+}
+footer {
+	margin-top: 100px;
+	 clear:both;
+     display:block;
+	 align-content:center;
+	}
