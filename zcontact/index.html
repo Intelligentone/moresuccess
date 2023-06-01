@@ -1,30 +1,57 @@
-
-
-
-<!DOCTYPE html> 
-<head> 
-<meta charset="utf-8">
-<title>zcontact</title> 
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta name="viewport" content="width=device-width">
-
-</head> 
-
-
-<div style="text-align: center;">
-
-<h1>Contact Me</h1>
-
-<div class="mycontact"> <b>
-</b> 
-<form action="https://intelligentone.github.io/moresuccess/thankyou04/index.html" method="get" name="mycontact"> <b> 
-<label for="fname">NAME:</label> <input type="text" id="fname" name="fname"><br><br>
-<label for="email">EMAIL:</label> <input type="text" id="email" name="lname"><br><br>
-<label for="comment">COMMENT:</label> <input type="text" id="comment" name="fname"><br><br> 
+<html>   
+   <head>
+      <title>Form Validation</title>      
+      <script type = "text/javascript">
+         <!--
+            // Form validation code will come here.
+         //-->
+            <form action="https://intelligentone.github.io/moresuccess/thankyou04/index.html" id="myform" onsubmit="return validateForm();" >
+        
+      </script>      
+   </head>
+   
+   <body>
     
-<input type="submit" value="Submit"> </form> </div>
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">EMail</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Zip Code</td>
+               <td><input type = "text" name = "Zip" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Country</td>
+               <td>
+                  <select name = "Country">
+                     <option value = "-1" selected>[choose yours]</option>
+                     <option value = "1">USA</option>
+                     <option value = "2">UK</option>
+                     <option value = "3">INDIA</option>
+                  </select>
+               </td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Comments</td>
+          
+          <td align = ''></label>
+          <textarea cols="20" rows="8" id="Comments" name="Comments"></textarea>
+        </p><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>      
+   </body>
+</html>
 
-</form>
-
- 
 
