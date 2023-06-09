@@ -1,42 +1,12 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
+<style>
+.vertical-menu{text-align: center;}
 
 
-.vertical-menu {
-    
-  width: 200px; /* Set a width if you like */
-}
+h1{color: black;}
 
-.vertical-menu a {
-  text-align: center;
-  background-color:; /* Grey background color */
-  color: black; /* Black text color */
-  display: block; /* Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
-}
-.vertical-menu a:hover {
-  background-color: #ccc; /* Dark grey background on mouse-over */
-}
+li{color: white;}
+
+
+body {background-color: lightblue;}
+
+</style>
