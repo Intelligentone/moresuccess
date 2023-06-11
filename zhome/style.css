@@ -2,7 +2,7 @@
 .vertical-menu{text-align: center;}
 
 
-h1{color: white;}
+h1{color: blue;}
 
 li{color: white;}
 
@@ -10,7 +10,10 @@ body {background-color: lightblue;}
 
 .vertical-menu{text-align: center;}
 
-*   background-image: url{"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.T-IHQs7AURUU-iiBtglpLAHaEK%26pid%3DApi&f=1&ipt=1b7a2ae9605947eefdefe02d8ad5d85781e0c828aabad63bba9698e77f5bda0e&ipo=images");
-} 
+body {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.UBfeyhyW5qTptfXUuoYEjwHaHW%26pid%3DApi&f=1&ipt=c1d3a9ed9b496e944dec075662b160729af9d03b2d564be3c92b9d8d4773187a&ipo=images");
+  
+} 
 
+p1{color: lightblue;}
 </style>
