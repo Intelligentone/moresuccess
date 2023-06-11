@@ -1,16 +1,20 @@
 <style>
-.vertical-menu{text-align: center;}
 
 
-h1{color: white;text-align: center;}
+p1{color: black;}
 
 li{color: white;}
 
-body {background-color: lightblue;}
+
+body {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flive.staticflickr.com%2F6016%2F5935508616_21a46cb342_b.jpg&f=1&nofb=1&ipt=a965c79082db8f00e8d36d7eb974eaa49b70537e6754acace5f9010e10b178ee&ipo=images");
+  
+} 
 
 .vertical-menu{text-align: center;}
 
-*   background-image: url{"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.T-IHQs7AURUU-iiBtglpLAHaEK%26pid%3DApi&f=1&ipt=1b7a2ae9605947eefdefe02d8ad5d85781e0c828aabad63bba9698e77f5bda0e&ipo=images");
-} 
+h1{color: white;}
+
+h1{border-style: double;}
 
 </style>
