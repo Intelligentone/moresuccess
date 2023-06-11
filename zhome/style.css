@@ -1,8 +1,7 @@
 <style>
-.vertical-menu{text-align: center;}
 
 
-h1{color: blue;}
+h1{color: black;}
 
 li{color: white;}
 
@@ -12,5 +11,8 @@ body {
   
 } 
 
+.vertical-menu{text-align: center;}
+
 p1{color: lightblue;}
+
 </style>
