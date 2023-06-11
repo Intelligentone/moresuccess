@@ -1,19 +1,18 @@
 
 
-
 <style>
-
+.vertical-menu{text-align: center;}
 
 
 h1{color: black;}
 
-h2{color: white;}
-
-h3{color: white;}
-
 li{color: white;}
 
-
 body {background-color: lightblue;}
+
+.vertical-menu{text-align: center;}
+
+*   background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.T-IHQs7AURUU-iiBtglpLAHaEK%26pid%3DApi&f=1&ipt=1b7a2ae9605947eefdefe02d8ad5d85781e0c828aabad63bba9698e77f5bda0e&ipo=images");
+} 
 
 </style>
