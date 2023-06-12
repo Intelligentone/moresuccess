@@ -77,7 +77,11 @@ height="31" width="88"/></a>
 
 
 <script>
-  let now = new Date();
-alert( now ); // shows current date/time
+
+ let current = new Date();
+let cDate = current.getFullYear() + '-' + (current.getMonth() + 1) + '-' + current.getDate();
+let cTime = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
+let dateTime = cDate + ' ' + cTime;
+console.log(dateTime);
 </script>
 
