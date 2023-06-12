@@ -158,9 +158,9 @@ img {
 img {
   border-radius: 100%;
 }
-  
-.article {color:white}
-.article {border-style: double;}
-  
+
+p{border-style: double;}
+p{color: white;}
+
 </style>
 
