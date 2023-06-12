@@ -8,6 +8,10 @@ form.addEventListener('submit', (e) => {
   if (name.value === '' || name.value == null) {
     messages.push('Name is required')
   }
+  
+  if (email.value === '' || email.value == null) {
+    messages.push('Name is required')
+  }
 
   if (email.value.length <= 0) {
     messages.push('Password must be longer than 0 characters')
