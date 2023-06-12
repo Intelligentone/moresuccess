@@ -10,19 +10,15 @@ form.addEventListener('submit', (e) => {
   }
   
   if (email.value === '' || email.value == null) {
-    messages.push('Name is required')
-  }
-
-  if (email.value.length <= 0) {
-    messages.push('Password must be longer than 0 characters')
+    messages.push('Please enter a valid email')
   }
 
   if (email.value.length >= 20) {
-    messages.push('Password must be less than 20 characters')
+    messages.push('Email must be less than 20 characters')
   }
 
-  if (email.value === 'password') {
-    messages.push('Password cannot be password')
+  if (email.value === 'email') {
+    messages.push('Email cannot be the word email')
   }
   if (messages.length > 0) {
     e.preventDefault()
