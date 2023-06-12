@@ -6,7 +6,7 @@ const errorElement = document.getElementById('error')
 form.addEventListener('submit', (e) => {
   let messages = []
   if (name.value === '' || name.value == null) {
-    messages.push('Name is required')
+    messages.push('Fill out this field')
   }
 
   if (email.value.length <= 6) {
@@ -18,7 +18,7 @@ form.addEventListener('submit', (e) => {
   }
 
   if (email.value === 'email') {
-    messages.push('Must be valid email')
+    messages.push('Enter an email')
   }
   
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
