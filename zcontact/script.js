@@ -1,28 +1,30 @@
+const name = document.getElementById('name')
+const email = document.getElementById('email')
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
 
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if (name.value === '' || name.value == null) {
+    messages.push('Name is required')
+  }
+
+  if (email.value.length <= 6) {
+    messages.push('Email must be longer than 6 characters')
+  }
+
+  if (email.value.length >= 20) {
+    messages.push('Email must be less than 20 characters')
+  }
+
+  if (email.value === 'email') {
+    messages.push('Must be valid email')
+  }
   
-      // Form validation code will come here.
-      function validate() {
-      
-         if( document.myForm.Name.value == "" ) {
-            alert( "Please provide your name!" );
-            document.myForm.Name.focus() ;
-            return false;
-         }
-         if( document.myForm.EMail.value == "" ) {
-            alert( "Please provide your Email!" );
-            document.myForm.EMail.focus() ;
-            return false;
-         }
-         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
-            document.myForm.Zip.value.length != 5 ) {
-            
-            alert( "Please provide a zip in the format #####." );
-            document.myForm.Zip.focus() ;
-            return false;
-         }
-         if( document.myForm.Country.value == "-1" ) {
-            alert( "Please provide your country!" );
-            return false;
-         }
-         return( true );
-      }
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  
+    if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(', ')
+  }
+})
