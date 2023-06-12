@@ -70,7 +70,7 @@ height="31" width="88"/></a>
 <div class="clear"> </div>
 
 </div>
-
+<>
 </div>
 </body>
 </html>
@@ -78,10 +78,15 @@ height="31" width="88"/></a>
 
 <script>
 
- let current = new Date();
-let cDate = current.getFullYear() + '-' + (current.getMonth() + 1) + '-' + current.getDate();
-let cTime = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
-let dateTime = cDate + ' ' + cTime;
-console.log(dateTime);
+  <h2 id="displayDateTime"></h2>
+  <script type="text/javascript">
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+   document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day: ' + daylist[day];
+ 
 </script>
 
