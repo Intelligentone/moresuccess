@@ -20,7 +20,7 @@
 
 <br><br><br><br>
 
-
+<body>
 <div style="text-align: center;">
  
   
@@ -90,3 +90,30 @@
   <h1> Programming 140 is a Software Development course that is based upon learning more about SQL and Database design. More specifically, what I learned was how to correctly create SQL, and how to effectively input the data into various databases.I did not know much about this very important aspect of technology before I took the course. I had previously learned a good amount of SQL programming in an introductary class relating to SQL, just one quarter prior to taking PROG 140. This course took my previous knowledge gained about SQL and enhanced it to a new level by teaching me how to best insert the infromation into proper databases.
   In this course I have mastered how to create, add, and delete SQL syntax. I also learned how to use various forms of related languages. I have also learned how to to create efficient datebases with the data built from SQL. I can now create needed SQL from large databases and then I can input the data into database designed structures to further utilize the technology. Taking this course was a large leap into the great field of tcehnology that will support my goal of becoming a certified programmer and developer.</h1>
 <br><br><br>
+</body>
+<footer>
+
+<h2 id="displayDateTime">""</h2>    
+  </footer>
+</html>
+
+<script>
+ 
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+   
+  document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
+ 
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+   document.getElementById("displayDateTime").innerHTML = dateTime + " " + daylist[day];
+ 
+</script> 
