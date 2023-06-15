@@ -1,6 +1,4 @@
 
-
-
 p1{color: black;}
 
 li{color: white;}
@@ -18,3 +16,9 @@ h1{color: white;}
 h1{border-style: double;}
 
 *{text-align: center;}
+
+ul{
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
