@@ -1,5 +1,5 @@
  
-
+<style>
 body { 
 font-family:  sans-serif;
 margin: 0;
@@ -80,16 +80,16 @@ float: right;
 width: 300px; 
 color: lightblue;
 margin: 30px 20px 20px 0;
+}
 
-
-
+}
 #menu ul { 
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
-border-radius: 10px;}
-list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
+border-radius: 10px;
 
- 
+list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
+}
 #menu ul li a { color: darkblue; text-decoration: none; border-bottom: 1px dotted #12c; }
 
 #content { float: left; width: 580px; margin: 10px 0 40px 20px;}
@@ -162,5 +162,5 @@ img {
 p{border-style: double;}
 p{color: white;}
 
-
+</style>
 
