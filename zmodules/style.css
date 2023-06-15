@@ -18,7 +18,7 @@ h1{border-style: double;}
 *{text-align: center;}
 
 ul{
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
