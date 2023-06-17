@@ -6,7 +6,7 @@ var i = 0;
 // Show Multiplication Table As A Message
 var msg = '<h2> Multiplication Table </h2>';
 
-while (i <= 11) {
+while (i <= 10) {
     msg += i + ' x ' + multiplier + ' = ' + (i * multiplier) + '<br />';
     i++;
 }
