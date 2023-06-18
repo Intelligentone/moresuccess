@@ -1,136 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>User Information</legend>
+    <form action="thankyou.html" method="post">
+        <label for="name">Enter your name:</label><br>
+        <input type="text" id="name" placeholder="name..." name="name"><br> 
+        <label for="password">Enter your password:</label><br>
+        <input type="text" placeholder="password..."name="password" id="password"><br> 
+        <label for="aboutYou">Tell us about you</label><br>
+        <textarea name="abouYou" rows="5" cols="30">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>I Spy</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+        </textarea>   
+</fieldset>
+
+    <input type="submit" value="SEND"><br>
+
+</form>
+    
+</body>
   
-  <body>
+  <form>
+    <p>Are you new to my site?</p>
+  <label for="yes">Yes</label>
+  <input type="radio" id="yes" name="yes"><br>
+   <label for="yes">No</label>
+  <input type="radio" id="yes" name="yes"><br> 
+  <hr>
+    <label for="lname">Would you like to subscribe to my blog?</label><br>
     
-    <h1>I Spy Game</h1>
-
-    <h3>See if you can find the following object on the picture.Once you find them, click on them!</h3>
-
-    <div id="item1">Pig</div>
-    <div id="item2">Sun</div>
-    <div id="item3">Tree</div>
-
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.tQW_iCDiVMDa11tO4ivyEwAAAA%26pid%3DApi&amp;f=1&amp;ipt=8c81963479bff1cf70a3034b017a7173f28153dcb035c27205973e3fdd89dc3d&amp;ipo=images" alt="randommap" usemap="image-map" width="500" height="500">
+ <input type="checkbox" id="sub" name="sub">
+    <hr>
+   
+   <hr> 
     
-    <map name="image-map">
-      <area shape="circle" alt="pig" id="pig" coords="90,198,123,170" href="#">
-      <area shape="circle" alt="sun" id="sun" coords="122,250,62" href="#">
-      <area shape="rect" alt="tree" id="tree" coords="121,57,164,107" href="#">
-    </map>
-
+   <label for="year">What is your students year?</label>
+<select name="year" id="year">
+  <optgroup label="YEAR">
+    <option value="23">2023</option>
+    <option value="22">2022</option>
+    <option value="21">2021</option>
+    <option value="20">2020</option>
+    <option value="19">2019</option>
+    <option value="18">2018</option>
+    <option value="17">2017</option>
+    <option value="16">2016</option>
+    <option value="15">2015</option>
+    <option value="14">2014</option>
+    <option value="13">2013</option>
+    <option value="12">2012</option>
+    <option value="11">2011</option>
+    <option value="10">2010</option>
+    <option value="09">2009</option>
+    <option value="08">2008</option>
+    
+       </optgroup>  
+  </select> 
+    <br><br>
+   <label for="source">Where did you hear about me?</label><br>
+<select name="source" id="source">
+  <optgroup label="Source">
+    <option value="1">YouTube</option>
+    <option value="2">Facebook</option>
+    <option value="3">Twitter</option>
+    <option value="4">Reddit</option>
+    <option value="5">Email</option>
+    <option value="6">Friends</option>
+    <option value="7">Family</option>
+    <option value="8">Advisor</option>
+    <option value="9">Teacher</option>
+    <option value="10">Local News</option>
+  </optgroup>
+</select> 
+    
     <br>
-
-    <p><input type="button" onclick="document.location.reload(true)" value="Restart"!</p>
-
-    <script src="script.js"></script>
-  
-  </body>
-
+     <label for="go"></label><br>
+  <input type="submit" id="go" name="go"><br>  
+    
+ 
+  <form action="https://intelligentone.github.io/moresuccess/thankyou04/index.html" method="post">  
+    
+</form>
+ 
 </html>
-
-<script>
-var Pig = document.getElementById("pig");
-var Sun = document.getElementById("sun");
-var Tree = document.getElementById("tree");
-
-function foundPig(){
-  document.getElementById("item1").style.textDecoration="line-through";
-}
-
-Pig.addEventListener("click", function(){
-  foundPig("Pig");
-}, false);
-
-function foundSun(){
-  document.getElementById("item2").style.textDecoration="line-through";
-}
-
-Sun.addEventListener("click", function(){
-  foundSun("Sun");
-}, false);
-
-function foundTree(){
-  document.getElementById("item3").style.textDecoration="line-through";
-}
-
-Tree.addEventListener("click", function(){
-  foundTree("Tree");
-}, false);
-
   
-</script>
-
-
-
-
-<style>
-
-h1 {
-  text-align: center;
-  font-family: 'OddBallzRegular';
-  font-weight: bold;
-  color: firebrick;
-  border: 7px;
-  padding: 5px;
-  border-style: dotted;
-}
-
-p {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: firebrick
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div { 
-  color: firebrick;
-  display: block;
-  background: bisque;
-  padding: 3px;
-  font-size: 15px;
-  text-align: center;
-  font-family: Tahoma, Verdana, sans-serif;
-}
-
-body {
-  background-color: lightsalmon;
-}
-
-
-
-
-
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
+  
+  
+ 
+</html>
