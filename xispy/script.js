@@ -1,13 +1,13 @@
-var box = document.getElementById("box");
-var ten = document.getElementById("ten");
-var k = document.getElementById("kay");
+var Box = document.getElementById("box");
+var Ten = document.getElementById("ten");
+var Kay = document.getElementById("kay");
 
 function foundBox(){
   document.getElementById("item1").style.textDecoration="line-through";
 }
 
 Box.addEventListener("click", function(){
-  foundBox("box");
+  foundBox("Box");
 }, false);
 
 function foundTen(){
@@ -15,7 +15,7 @@ function foundTen(){
 }
 
 Ten.addEventListener("click", function(){
-  foundTen("ten");
+  foundTen("Ten");
 }, false);
 
 function foundKay(){
