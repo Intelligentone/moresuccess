@@ -1,13 +1,13 @@
-var box = document.getElementById("box");
-var ten = document.getElementById("ten");
-var kay = document.getElementById("kay");
+var Cube = document.getElementById("Cube");
+var Ten = document.getElementById("Ten");
+var Kay = document.getElementById("Kay");
 
-function foundBox(){
+function foundCube(){
   document.getElementById("item1").style.textDecoration="line-through";
 }
 
 Box.addEventListener("click", function(){
-  foundBox("Box");
+  foundBox("Cube");
 }, false);
 
 function foundTen(){
