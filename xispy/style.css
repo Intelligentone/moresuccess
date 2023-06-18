@@ -21,9 +21,9 @@ img {
 }
 
 div { 
-  color: yellow;
+  color: red;
   display: block;
-  background: blue;
+  background: yellow;
   padding: 3px;
   font-size: 15px;
   text-align: center;
