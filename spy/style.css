@@ -1,1 +1,36 @@
 
+h1 {
+  text-align: center;
+  font-family: 'OddBallzRegular';
+  font-weight: bold;
+  color: firebrick;
+  border: 7px;
+  padding: 5px;
+  border-style: dotted;
+}
+
+p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: firebrick
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div { 
+  color: firebrick;
+  display: block;
+  background: bisque;
+  padding: 3px;
+  font-size: 15px;
+  text-align: center;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+body {
+  background-color: lightsalmon;
+}
