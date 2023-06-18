@@ -1,81 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Mainpage</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
 
-</head>
-<body>
-<div id="wrap">
-<div id="header">
-<h1><i>Akiel Joseph-Taylor</i></h1>
-<h2><i>My Prosperous Portfolio</i></h2>
-</div>
-
-<div id="topmenu">
-</div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>I Spy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
   
-<ul>
-<li><a href="https://intelligentone.github.io/moresuccess/zhome/index.html">Home</a></li>
-<li><a href="https://intelligentone.github.io/moresuccess/zabout/index.html">About </a></li>
-<li><a href="https://intelligentone.github.io/moresuccess/zcoursework/index.html">Coursework</a></li>
-<li><a href="https://intelligentone.github.io/moresuccess/zartifacts/index.html">Artifacts</a></li>
-<li><a href="https://intelligentone.github.io/moresuccess/zmodules/index.html">Module Assignments</a></li>
-<li><a href="https://intelligentone.github.io/moresuccess/zcontact/index.html">Contact Me</a></li> 
-<li><a href="https://intelligentone.github.io/moresuccess/zfav/index.html">Interest</a></li>
+  <body>
+    
+    <h1>I Spy Game</h1>
 
-</ul>
-</div>
+    <h3>See if you can find the following object on the picture.Once you find them, click on them!</h3>
 
+    <div id="item1">Pig</div>
+    <div id="item2">Sun</div>
+    <div id="item3">Tree</div>
 
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.jJCTOFlCWKjIqLfz94vsggAAAA%26pid%3DApi&f=1&ipt=de65d15f701b69fe2193c92f5084b40046dab8282fcd05876727aa6a35280e14&ipo=images" alt="Pic 3" />
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.tQW_iCDiVMDa11tO4ivyEwAAAA%26pid%3DApi&amp;f=1&amp;ipt=8c81963479bff1cf70a3034b017a7173f28153dcb035c27205973e3fdd89dc3d&amp;ipo=images" alt="randommap" usemap="image-map" width="500" height="500">
+    
+    <map name="image-map">
+      <area shape="circle" alt="pig" id="pig" coords="90,198,123,170" href="#">
+      <area shape="circle" alt="sun" id="sun" coords="122,250,62" href="#">
+      <area shape="rect" alt="tree" id="tree" coords="121,57,164,107" href="#">
+    </map>
 
-<div class="cright">
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.UBfeyhyW5qTptfXUuoYEjwHaHW%26pid%3DApi&f=1&ipt=a752822ccceff6a0e8724d3600c365d2babd3be7334a9e20de9212106f21ce20&ipo=images" alt="Pic 2" />
-</div>
-<br><br>
+    <br>
 
+    <p><input type="button" onclick="document.location.reload(true)" value="Restart"!</p>
+
+    <script src="script.js"></script>
   
-  <div class="clear"> </div>
+  </body>
 
-
- <br><br><br><br>
-  
-
-<div id="footer">
-
-<div class="left">
-
-
-<p><a href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fintelligentone.github.io%2Fmoresuccess%2Fzprofile%2Findex.html#l77c24"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" 
-
-height="31" width="88" /></a>
-</p>
-
-  <p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="Valid CSS!" />
-    </a>
-</p>
-
-</div>
-
-<div class="right"> 
-
- <h2 id="displayDateTime">""</h2>  
-  
-Copyright &copy; 2023 
-</div>
-
-<script src="script.js"> </script>
-  
-<div class="clear"> </div>
-
-</div>
-</body>
 </html>
 
- 
+<script>
+var Pig = document.getElementById("pig");
+var Sun = document.getElementById("sun");
+var Tree = document.getElementById("tree");
+
+function foundPig(){
+  document.getElementById("item1").style.textDecoration="line-through";
+}
+
+Pig.addEventListener("click", function(){
+  foundPig("Pig");
+}, false);
+
+function foundSun(){
+  document.getElementById("item2").style.textDecoration="line-through";
+}
+
+Sun.addEventListener("click", function(){
+  foundSun("Sun");
+}, false);
+
+function foundTree(){
+  document.getElementById("item3").style.textDecoration="line-through";
+}
+
+Tree.addEventListener("click", function(){
+  foundTree("Tree");
+}, false);
+
   
+</script>
+
+
+
+
+<style>
+
+h1 {
+  text-align: center;
+  font-family: 'OddBallzRegular';
+  font-weight: bold;
+  color: firebrick;
+  border: 7px;
+  padding: 5px;
+  border-style: dotted;
+}
+
+p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: firebrick
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div { 
+  color: firebrick;
+  display: block;
+  background: bisque;
+  padding: 3px;
+  font-size: 15px;
+  text-align: center;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+body {
+  background-color: lightsalmon;
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
