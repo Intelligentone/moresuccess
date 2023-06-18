@@ -6,7 +6,7 @@ function foundCube(){
   document.getElementById("item1").style.textDecoration="line-through";
 }
 
-Box.addEventListener("click", function(){
+Cube.addEventListener("click", function(){
   foundBox("Cube");
 }, false);
 
