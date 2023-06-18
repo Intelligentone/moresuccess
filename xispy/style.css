@@ -6,13 +6,13 @@ h1 {
   color: red;
   border: 7px;
   padding: 5px;
-  border-style: dotted;
+  border-style: outset;
 }
 
 p {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: firebrick
+  color:white
 }  
 
 img {
@@ -22,9 +22,9 @@ img {
 }
 
 div { 
-  color: firebrick;
+  color: yellow;
   display: block;
-  background: bisque;
+  background: blue;
   padding: 3px;
   font-size: 15px;
   text-align: center;
