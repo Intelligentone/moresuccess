@@ -1,6 +1,6 @@
 var Cube = document.getElementById("Cube");
 var Ten = document.getElementById("Ten");
-var Kay = document.getElementById("Kay");
+var K = document.getElementById("K");
 
 function foundCube(){
   document.getElementById("item1").style.textDecoration="line-through";
@@ -18,10 +18,10 @@ Ten.addEventListener("click", function(){
   foundTen("Ten");
 }, false);
 
-function foundKay(){
+function foundK(){
   document.getElementById("item3").style.textDecoration="line-through";
 }
 
-Kay.addEventListener("click", function(){
-  foundKay("Kay");
+K.addEventListener("click", function(){
+  foundKay("K");
 }, false);
