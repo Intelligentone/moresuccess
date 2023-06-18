@@ -3,7 +3,7 @@ var Ten = document.getElementById("ten");
 var Kay = document.getElementById("kay");
 
 function foundCube(){
-  document.getElementById("item1").style.textDecoration="line-through";
+  document.getElementById("cube").style.textDecoration="line-through";
 }
 
 Cube.addEventListener("click", function(){
@@ -11,7 +11,7 @@ Cube.addEventListener("click", function(){
 }, false);
 
 function foundTen(){
-  document.getElementById("item2").style.textDecoration="line-through";
+  document.getElementById("ten").style.textDecoration="line-through";
 }
 
 Ten.addEventListener("click", function(){
@@ -19,7 +19,7 @@ Ten.addEventListener("click", function(){
 }, false);
 
 function foundKay(){
-  document.getElementById("item3").style.textDecoration="line-through";
+  document.getElementById("kay").style.textDecoration="line-through";
 }
 
 Kay.addEventListener("click", function(){
