@@ -1,6 +1,6 @@
-var Box = document.getElementById("box");
-var Ten = document.getElementById("ten");
-var Kay = document.getElementById("kay");
+var box = document.getElementById("box");
+var ten = document.getElementById("ten");
+var kay = document.getElementById("kay");
 
 function foundBox(){
   document.getElementById("item1").style.textDecoration="line-through";
