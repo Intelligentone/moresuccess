@@ -23,5 +23,5 @@ function foundK(){
 }
 
 K.addEventListener("click", function(){
-  foundKay("K");
+  foundK("K");
 }, false);
