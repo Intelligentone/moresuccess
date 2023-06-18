@@ -1,6 +1,6 @@
-var Cube = document.getElementById("cube");
-var Ten = document.getElementById("ten");
-var Kay = document.getElementById("kay");
+var cube = document.getElementById("cube");
+var ten = document.getElementById("ten");
+var kay = document.getElementById("kay");
 
 function foundCube(){
   document.getElementById("cube").style.textDecoration="line-through";
