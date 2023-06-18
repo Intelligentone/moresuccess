@@ -1,17 +1,17 @@
-var cube = document.getElementById("cube");
-var ten = document.getElementById("ten");
-var kay = document.getElementById("kay");
+var Cube = document.getElementById("Cube");
+var Ten = document.getElementById("Ten");
+var Kay = document.getElementById("Kay");
 
 function foundCube(){
-  document.getElementById("cube").style.textDecoration="line-through";
+  document.getElementById("Cube").style.textDecoration="line-through";
 }
 
 Cube.addEventListener("click", function(){
-  foundBox("Cube");
+  foundCube("Cube");
 }, false);
 
 function foundTen(){
-  document.getElementById("ten").style.textDecoration="line-through";
+  document.getElementById("Ten").style.textDecoration="line-through";
 }
 
 Ten.addEventListener("click", function(){
@@ -19,9 +19,9 @@ Ten.addEventListener("click", function(){
 }, false);
 
 function foundKay(){
-  document.getElementById("kay").style.textDecoration="line-through";
+  document.getElementById("Kay").style.textDecoration="line-through";
 }
 
 Kay.addEventListener("click", function(){
-  foundTree("Kay");
+  foundKay("Kay");
 }, false);
