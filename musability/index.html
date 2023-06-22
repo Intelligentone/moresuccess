@@ -2,40 +2,48 @@
 <html lang="en">
   <head>
  <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Groceries</title>
-
+    <title>U&A</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div id="page">
-      <h1 id="header"></h1>
-      <h2>Buy groceries</h2>
-      <ul id="todo"><li id="one" class="hot"><em>fresh</em> figs</li><li id="two" class="hot">pine nuts</li><li id="three" class="hot">honey</li><li id="four">balsamic vinegar</li></ul>
-    </div>
-    <input type="text" id="items"><button id="btnAddElement"
-          onclick="addItem();">
-    Add New Item</button>
-   <script>
-function addItem(){
+   
+<h1> Usability and Accessibility Analysis</h1>
 
-var newItem = document.getElementById('items').value;
-    
-// Create a new element and store it in a variable.
-var newEl = document.createElement('li');
 
-// Create a text node and store it in a variable.
-var newText = document.createTextNode(newItem);
+<table>
+  <tr>
+    <th>Assessment Criteria</th>
+    <th>Pass/Fail</th> 
+    <th>Screenshot Of Results</th>
+  </tr>
+  <tr>
+    <td>Website passes the W3C validator
+Links to an external site.</td>
+    <td>FAIL</td>
+     <td>https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.espn.com%2F
+</td> 
+    <td></td>
+  </tr>
+  <tr>
+   
+    <td>Website passes CSS validator
+Links to an external site.</td>
+    <td>FAIL</td> 
+    <td>https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwww.espn.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en</td>
+  </tr>
+  
+   <tr>
+   
+    <td>Website status using SiteImprove
+Links to an external site.
+</td>
+    <td>FAIL</td> 
+    <td>https://www.siteimprove.com/website-checker/result/?website=https://www.espn.com/&email=hooligan4342@yahoo.com</td>
+  </tr>
 
-// Attach the new text node to the new element.
-newEl.appendChild(newText);
 
-// Find the position where the new element should be added.
-var position = document.getElementsByTagName('ul')[0];
-
-// Insert the new element into its position.
-position.appendChild(newEl);}
-</script>
-
+  
+</table>
   </body>
 </html>
 
